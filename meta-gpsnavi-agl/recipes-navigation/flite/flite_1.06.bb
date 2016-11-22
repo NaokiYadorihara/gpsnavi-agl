@@ -16,10 +16,9 @@ SRC_URI[sha256sum] = "8a8c3ecc186ef92eda150a4aa687d8638f4f42be52aa2971e72aa960d4
 DEPENDS = " hts-engine "
 RDEPENDS_${PN} = " flite-voicedata "
 
-inherit autotools
+inherit autotools-brokensep
 
 S = "${WORKDIR}/flite+hts_engine-${PV}"
-B = "${S}"
 
 EXTRA_OECONF = " \
  --with-hts-engine-header-path=${PKG_CONFIG_SYSROOT_DIR}/usr/include \

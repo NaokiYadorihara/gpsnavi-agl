@@ -5,12 +5,9 @@ LICENSE = "BSD"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=b3be85b37c90bfd4d34d79a0e3f28700"
 
-PR = "r0"
-
 inherit autotools
 
 BBCLASSEXTEND = "native"
-PROVIDES_append_class-native = " hts-engine-native "
 
 S = "${WORKDIR}/hts_engine_API-${PV}"
 
