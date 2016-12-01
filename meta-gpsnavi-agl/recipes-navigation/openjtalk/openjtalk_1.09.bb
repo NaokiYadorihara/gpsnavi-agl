@@ -6,7 +6,6 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://COPYING;md5=ec9073c0ca40ff7c388b31cfd6a07a9e"
 
 BBCLASSEXTEND = "native"
-PROVIDES_append_class-native = " openjtalk-native "
 
 SRC_URI = "\
 	http://downloads.sourceforge.net/open-jtalk/open_jtalk-${PV}.tar.gz \
@@ -27,10 +26,9 @@ DEPENDS_class-native = " hts-engine-native "
 RDEPENDS_${PN} = " openjtalk-voicedata "
 RDEPENDS_${PN}_class-native = " "
 
-inherit autotools
+inherit autotools-brokensep
 
 S = "${WORKDIR}/open_jtalk-${PV}"
-B = "${S}"
 
 
 EXTRA_OECONF = " \
