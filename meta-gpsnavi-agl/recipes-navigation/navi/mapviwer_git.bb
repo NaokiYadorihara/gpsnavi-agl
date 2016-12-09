@@ -7,10 +7,10 @@ DEPENDS = " \
           wayland \
           "
 
-RDEPENDS_${PN} = " flite openjtalk mapviwer "
+RDEPENDS_${PN} = " navigation "
 
-SRCREV="df86ce81cab4c670ce183d57746b74335861dfe9"
-SRC_URI="git://github.com/AGLExport/gpsnavi.git"
+SRCREV="4fb3cae66d9043bfd523e772fca7b65a4a8926d0"
+SRC_URI="git://github.com/AGLExport/mapviwer.git"
 
 # To avoid C++ library link failure
 SECURITY_CFLAGS = ""
